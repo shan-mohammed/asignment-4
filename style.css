@@ -369,4 +369,23 @@ nav li a{
   transform: rotate(-45deg) translate(6px, -6px);;
  }
 }
+@media(max-width:576px){
+
+    .figure img{
+        height: 320px;
+        width:auto;
+        border-radius:0px;
+    }
+    .name{
+     position:absolute;
+     bottom: 0px;
+     left:10px
+    }
+    .name span{
+        color: #ffffff;
+    }
+    .name p{
+        font-weight: bold;
+    }
+}
  
