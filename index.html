@@ -1,89 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boldonse&family=Oswald:wght@200..700&family=Playwrite+NZ+Guides&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-     
-        <nav>
-            <div class="logo">Logo</div>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-          <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">Logo</div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-   
+
     <main>
-        <section class="figure">
-                      
-          <div class="name">
-                      <h1>hi, i'm <span>Mohammed</span></h1>
-                      <p>a Full Stack Web Developer</p>
-
-                    </div>
-                   <img src="./images/IMG_E3108.jpg" alt="clossup image" width="400px">
-                   
-      
-        </section>
-        <div class="description">
-
-            <section id="about">
-                <h2>About Me</h2>
-                <article>
-                    <p>
-                       Hello, my name is <span> Mohammed </span>.I am aupcoming web Developer, after a long career break,I joined with Entri for study developing.Now this is my passion.I can build a web sight using HTML, CSS, and JavaSript
-                    </p>
-                
-                </article>
-            </section>
-            <!-- skills... -->
-             <section id="skills">
-                <h2>
-                    Skills
-                </h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                   <li> React</li>
-                </ul>
-             </section>
-             <!-- form..... -->
-             <section id="contact"> 
-                <h2>Contact</h2>
-                <form action="action" method="post">
-                    <label for="name">Name:</label><br>
-                <input type="text" placeholder="Name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" placeholder="Email" required   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
-                <label for="subject">Subject</label><br>
-                <input type="text" name="subject" id="subject" placeholder="write here.."><br><br>
-                <label for="textarea">Messages</label><br>
-                <textarea name="messages" rows="10" columns="30" maxlength="200" placeholder="Your Messages..."></textarea><br><br>
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset">
-                
-                </form>
-             </section>
+      <section class="figure">
+        <div class="name">
+          <h1>hi, i'm <span>Mohammed</span></h1>
+          <p>a Full Stack Web Developer</p>
         </div>
+        <img src="./images/IMG_E3108.jpg" alt="clossup image" width="400px" />
+      </section>
+      <div class="description">
+        <section id="about">
+          <h2>About Me</h2>
+          <article>
+            <p>
+              Hello, my name is <span> Mohammed </span>.I am aupcoming web
+              Developer, after a long career break,I joined with Entri for study
+              developing.Now this is my passion.I can build a web site using
+              HTML, CSS, and JavaSript
+            </p>
+          </article>
+        </section>
+        <!-- skills... -->
+        <section id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </section>
+        <!-- my projects -->
+ <h2>My Projects</h2>
+    
+        <section class="project">
+
+         
+          <div class="project-card">
+            <img src="./images/delivery.avif" alt="Project Image" />
+
+            <div class="project-content">
+              <h3>Food Ordering App</h3>
+              <p>
+                A React-based app with cart, filtering, and checkout features.
+              </p>
+
+              <div class="buttons">
+                <a href="#">Live Demo</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card-2">
+            <img src="./images/online-taxi.jpg" alt="Project Image" />
+
+            <div class="project-content">
+              <h3>Online Taxi App</h3>
+              <p>
+                A React-based app with cart, filtering, and checkout features.
+              </p>
+
+              <div class="buttons">
+                <a href="#">Live Demo</a>
+                <a href="#">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- form..... -->
+        <section id="contact">
+          <h2>Contact</h2>
+          <form action="action" method="post">
+            <label for="name">Name:</label><br />
+            <input type="text" placeholder="Name" required /><br />
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            /><br /><br />
+            <label for="subject">Subject</label><br />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="write here.."
+            /><br /><br />
+            <label for="textarea">Messages</label><br />
+            <textarea
+              name="messages"
+              rows="10"
+              columns="30"
+              maxlength="200"
+              placeholder="Your Messages..."
+            ></textarea
+            ><br /><br />
+            <div class="buttons">
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
     <!-- footer.../ -->
-     <footer>
-        <p>&copy; 2026 Mohammed | Email:shanmhd@gmail.com</p>
-     </footer>
-    
-</body>
+    <footer>
+      <p>&copy; 2026 Mohammed | Email:shanmhd@gmail.com</p>
+    </footer>
+  </body>
 </html>

@@ -4,6 +4,10 @@
     box-sizing:border-box;
 
 }
+body {
+    background-color:rgba(128, 128, 128, 0.503)
+}
+
 /* .........nav.. */
 nav {
     display: flex;
@@ -83,7 +87,6 @@ nav {
     position: relative;
     left: 60px;
      overflow: hidden;
-    
 }
 
 .name h1 {
@@ -127,6 +130,10 @@ footer{
     padding-top: 20px;
     max-width: 600px;
     align-content: center;
+          font-family: "Boldonse", system-ui;
+  font-weight: 250;
+  font-style:normal
+
 
 }
 #skills{
@@ -134,6 +141,7 @@ footer{
 
 }
 #skills {
+    background-color: #cad295;
     max-width: 800px;
     margin: 50px auto;
     text-align: center;
@@ -174,12 +182,81 @@ footer{
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
+.project{
+
+    display:grid;
+  grid-template-columns:     repeat(auto-fit,minmax(50px, 1fr));
+
+    gap: 20px;
+    padding:20px;
+    overflow:scroll;
+}
+.project-card , .project-card-2{
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+     box-shadow:rgba(0,0,0,0.40) 0px 5px 15px;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.project-card-2 img{
+       width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.project-card-2:hover {
+    transform: translateY(-10px);
+}
+.project-content {
+    padding: 15px;
+}
+
+.project-content h3 {
+    margin: 0 0 10px;
+}
+
+.project-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a {
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.buttons a:hover {
+    background: #0056b3;
+}
 /* form */
 #contact {
+
     max-width: 600px;
     margin: 50px auto;
     padding: 30px;
-    background: #f9f9f9;
+    background: #d5d764;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     font-family: Arial, sans-serif;
@@ -308,6 +385,10 @@ footer{
 #contact input[type="submit"] {
     margin-right: 4%;
 }
+.buttons{
+    display :flex;
+    justify-content:space-evenly;
+}
 
 /* Responsive */
 
@@ -388,4 +469,15 @@ nav li a{
         font-weight: bold;
     }
 }
- 
+ @media(max-width:768px){
+    .project{display : flex;
+    flex-direction: column;
+overflow: hidden;
+background-color: rgb(223, 193, 119);
+justify-content: center;
+align-items:center ;
+
+
+}
+    
+ }
