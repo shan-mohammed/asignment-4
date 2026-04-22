@@ -63,10 +63,6 @@ nav {
 
 
 
-/* nav ul li:hover {
-    color: #ccc;
-    cursor: pointer;
-} */
 
 
 
@@ -84,6 +80,8 @@ nav {
 
 /* name....*/
 .name {
+
+    width:auto;
     position: relative;
     left: 60px;
      overflow: hidden;
@@ -96,8 +94,12 @@ nav {
 }
 
 .name span {
-    color: #5b1b74b3;
+    font-size: 60px;
+    font-weight: 400px;
+    color: #d51538b3;
+    font-style: italic;
     font-size: 40px;
+  
 }
 
 .name p {
@@ -183,8 +185,8 @@ footer{
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.project{
-
+#project{
+position: relative;
     display:grid;
   grid-template-columns:     repeat(auto-fit,minmax(50px, 1fr));
 
@@ -464,13 +466,16 @@ nav li a{
     }
     .name span{
         color: #ffffff;
+           font-family: 'Tangerine', serif;
+font-style: italic;
+  text-shadow: 4px 4px 4px #aaa;
     }
     .name p{
         font-weight: bold;
     }
 }
  @media(max-width:768px){
-    .project{display : flex;
+    #project{display : flex;
     flex-direction: column;
 overflow: hidden;
 background-color: rgb(223, 193, 119);
