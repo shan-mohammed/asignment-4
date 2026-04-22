@@ -392,7 +392,6 @@ position: relative;
     justify-content:space-evenly;
 }
 
-/* Responsive */
 
 /* responsive*/
 @media (max-width: 768px) {
@@ -431,9 +430,19 @@ nav li a{
      box-shadow: #5a6268;
      order: 1;
 }
+
 .name{
     height: auto;
     order: 2;
+}
+   #project{display : flex;
+    flex-direction: column;
+overflow: hidden;
+background-color: rgb(223, 193, 119);
+justify-content: center;
+align-items:center ;
+
+
 }
 
 
@@ -474,15 +483,3 @@ font-style: italic;
         font-weight: bold;
     }
 }
- @media(max-width:768px){
-    #project{display : flex;
-    flex-direction: column;
-overflow: hidden;
-background-color: rgb(223, 193, 119);
-justify-content: center;
-align-items:center ;
-
-
-}
-    
- }
